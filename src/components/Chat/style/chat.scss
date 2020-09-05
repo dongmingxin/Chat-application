@@ -1,0 +1,58 @@
+@import "./utils/mixin.scss";
+
+@mixin chatInLargScreen {
+    height: 600px;
+    width: 850px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eeeeee;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.outerContainer {
+    background-color:#eceff6;
+    width:100%;
+    height: 100vh;
+    @include respond-to(small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include respond-to(medium) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include respond-to(large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include respond-to(extra-large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.chatContainer {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    @include respond-to(small) {
+        @include chatInLargScreen
+    }
+    @include respond-to(medium) {
+        @include chatInLargScreen;
+    }
+    @include respond-to(large) {
+        @include chatInLargScreen;
+    }
+    @include respond-to(extra-large) {
+        @include chatInLargScreen;
+    }
+}
+

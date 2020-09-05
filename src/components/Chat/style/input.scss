@@ -1,0 +1,57 @@
+@import "./utils/mixin.scss";
+
+.input {
+    background-color:	#e9e9ec;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &__field {
+        width: 80%;
+        height: 28px;
+        margin-left: 10px;
+        border: none;
+        background-color: #dddddd;
+        @include respond-to(small) {
+            width: 85%;
+            height: 60%;
+        }
+        @include respond-to(medium) {
+            width: 85%;
+            height: 60%;
+        }
+        @include respond-to(large) {
+            width: 85%;
+            height: 60%;
+        }
+        @include respond-to(extra-large) {
+            width: 85%;
+            height: 60%;
+        }
+    }
+    &__button {
+        border: none;
+        background-color: #03c440;
+        height: 28px;
+        margin-left: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        @include respond-to(small) {
+            width: 90px;
+            height: 60%;
+        }
+        @include respond-to(medium) {
+            width: 90px;
+            height: 60%;
+        }
+        @include respond-to(large) {
+            width: 90px;
+            height: 60%;
+        }
+        @include respond-to(extra-large) {
+            width: 90px;
+            height: 60%;
+        }
+    }
+}

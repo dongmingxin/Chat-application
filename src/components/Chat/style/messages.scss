@@ -1,0 +1,24 @@
+@import "./utils/mixin.scss";
+
+.messagesContainer {
+    height: 550px;
+    flex:3;
+    background-color: #eeeeee;
+    @include respond-to(small) {
+        height: 100%;
+    }
+    @include respond-to(medium) {
+        height: 100%;
+    }
+    @include respond-to(large) {
+        height: 100%;
+    }
+    @include respond-to(extra-large) {
+        height: 100%;
+    }
+}
+
+.messageContainer {
+    width: 100%;
+    // background-color: white;
+}

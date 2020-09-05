@@ -1,0 +1,50 @@
+@import "./utils/mixin.scss";
+
+.message {
+    margin-top:20px;
+    margin-left:5px;
+    display: flex;
+    &__avatar-wrapper {
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__avatar {
+        width:48px;
+    }
+    &__text {
+        background-color: white;
+        border: 1.5px solid darkgray;
+        margin-left: 10px;
+        max-width: 250px;
+        border-radius: 10px 10px 10px 0px;
+        overflow-wrap: break-word;
+        @include respond-to(small) {
+            max-width: 400px;
+        }
+        @include respond-to(medium) {
+            max-width: 400px;
+        }
+        @include respond-to(large) {
+            max-width: 400px;
+        }
+        @include respond-to(extra-large) {
+            max-width: 400px;
+        }
+        &--user {
+            margin-left: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        &--text {
+            margin-left: 5px;
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+}
