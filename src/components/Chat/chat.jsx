@@ -65,30 +65,12 @@ const Chat = (props) => {
                     usersInRoom={usersInRoom}
                 />
                 <Input 
-                message={message}
-                handleInputChange={handleInputChange}
-                sendMessage={sendMessage}
+                    message={message}
+                    handleInputChange={handleInputChange}
+                    sendMessage={sendMessage}
                 />
             </div>
         </div>
-                // <div className="chatContainer">
-                //     <div className="chat">
-                //         <Message messages={messages} name={name}/>
-                //     </div>
-                //     <div className="message">
-                //         <input 
-                //         type="text" 
-                //         value={message}
-                //         onChange={(event) => setMessage(event.target.value)}
-                //         onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
-                //         />
-                //         <button onClick={(event) => sendMessage(event)}>Send</button>
-                //     </div>
-                //     <div>
-                //         <a href="/">Close</a>
-                //     </div>
-                // </div>
-        
      );
 }
  

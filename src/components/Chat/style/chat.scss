@@ -1,6 +1,6 @@
 @import "./utils/mixin.scss";
 
-@mixin chatInLargScreen {
+@mixin chatInLargeScreen {
     height: 600px;
     width: 850px;
     background-color: white;
@@ -43,16 +43,16 @@
     display: flex;
     flex-direction: column;
     @include respond-to(small) {
-        @include chatInLargScreen
+        @include chatInLargeScreen
     }
     @include respond-to(medium) {
-        @include chatInLargScreen;
+        @include chatInLargeScreen;
     }
     @include respond-to(large) {
-        @include chatInLargScreen;
+        @include chatInLargeScreen;
     }
     @include respond-to(extra-large) {
-        @include chatInLargScreen;
+        @include chatInLargeScreen;
     }
 }
 

@@ -1,0 +1,189 @@
+@import "./utils/mixin.scss";
+
+@mixin joinInLargeScreen {
+    height: 600px;
+    width: 850px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eeeeee;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinOuterContainer {
+    background-color:#eceff6;
+    width:100%;
+    height: 100vh;
+    @include respond-to(small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include respond-to(medium) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include respond-to(large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include respond-to(extra-large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.joinContainer {
+    height: 100%;
+    width: 100%;
+    // background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    @include respond-to(small) {
+        @include joinInLargeScreen;
+    }
+    @include respond-to(medium) {
+        @include joinInLargeScreen;
+    }
+    @include respond-to(large) {
+        @include joinInLargeScreen;
+    }
+    @include respond-to(extra-large) {
+        @include joinInLargeScreen;
+    }
+}
+
+.join {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    &__iconWrapper {
+        height: 50px;
+        width: 50px;
+        background-color: #f50057;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+    &__icon {
+        color:white;
+    }
+    &__select {
+        width: 80%;
+        height: 50px;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    &__input {
+        margin-top: 20px;
+        width: 79%;
+        height: 45px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    &__button {
+        margin-top:20px;
+        width: 80%;
+        text-decoration: none;
+    }
+    &__or {
+        margin-top:20px;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        &--line {
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        &--text {
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+    &__createRoom {
+        margin-top: 20px;
+        width: 79%;
+        height: 45px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    &__createButton {
+        margin-top:20px;
+        width: 80%;
+    }
+    @include respond-to(small) {
+        height: 500px;
+        width:500px;
+        background-color: white;
+    }
+    @include respond-to(medium) {
+        height: 500px;
+        width:500px;
+        background-color: white;
+    }
+    @include respond-to(large) {
+        height: 500px;
+        width:500px;
+        background-color: white;
+    }
+    @include respond-to(extra-large) {
+        height: 500px;
+        width:500px;
+        background-color: white;
+    }
+}
+
+// .joinContainer {
+//     width: 500px;
+//     height: 300px;
+//     background-color: white;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     input {
+//         width: 300px;
+//         height: 50px;
+//         margin-top: 50px;
+//         font-size: 20px;
+//         font-weight: bold;
+//     }
+//     select {
+//         width: 300px;
+//         height: 50px;
+//         margin-top: 50px;
+//         font-size: 20px;
+//         font-weight: bold;
+//     }
+//     button {
+//         margin-top: 30px;
+//         border: none;
+//         padding: 10px 40px;
+//         color: white;
+//         background-color: #ff8e33;
+//         border-radius: 5px;
+//         &:hover {
+//             opacity: 0.8;
+//             cursor: pointer;
+//         }
+//     }
+// }
